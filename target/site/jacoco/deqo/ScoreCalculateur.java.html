@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by franck on 28/11/2016.
  */
-<span class="nc" id="L8">public class ScoreCalculateur {</span>
+<span class="fc" id="L8">public class ScoreCalculateur {</span>
 
     /**
      * Calcule le score obtenu par un étudiant en répondant
@@ -14,11 +14,11 @@ import java.util.List;
      * @return le score compris entre 0 et 100
      */
     float calculeScore(List&lt;Integer&gt; indicesReponseEtudiant, QuestionAChoix question) {
-<span class="nc" id="L17">        float score = 0;</span>
-<span class="nc bnc" id="L18" title="All 2 branches missed.">        for (int indice:indicesReponseEtudiant) {</span>
-<span class="nc" id="L19">            score += question.getScoreForIndice(indice);</span>
-<span class="nc" id="L20">        }</span>
-<span class="nc" id="L21">        return score;</span>
+<span class="fc" id="L17">        float score = 0;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        for (int indice:indicesReponseEtudiant) {</span>
+<span class="fc" id="L19">            score += question.getScoreForIndice(indice);</span>
+<span class="fc" id="L20">        }</span>
+<span class="fc" id="L21">        return score;</span>
     }
 
 

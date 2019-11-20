@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: deqo.QuestionAChoixMultipleTest
+Test set: deqo.ScoreCalculateurTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in deqo.QuestionAChoixMultipleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in deqo.ScoreCalculateurTest
