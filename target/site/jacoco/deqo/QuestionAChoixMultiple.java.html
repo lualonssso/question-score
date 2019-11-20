@@ -18,17 +18,17 @@ public class QuestionAChoixMultiple implements QuestionAChoix {
      * @param indicesBonnesReponses la liste des indices formant la
      * bonne réponse.
      */
-<span class="nc" id="L21">    public QuestionAChoixMultiple(String enonce, final List&lt;Integer&gt; indicesBonnesReponses) {</span>
-<span class="nc" id="L22">        this.enonce = enonce;</span>
-<span class="nc" id="L23">        this.indicesBonnesReponses = indicesBonnesReponses;</span>
-<span class="nc" id="L24">    }</span>
+<span class="fc" id="L21">    public QuestionAChoixMultiple(String enonce, final List&lt;Integer&gt; indicesBonnesReponses) {</span>
+<span class="fc" id="L22">        this.enonce = enonce;</span>
+<span class="fc" id="L23">        this.indicesBonnesReponses = indicesBonnesReponses;</span>
+<span class="fc" id="L24">    }</span>
 
     /**
      * Récupère l'énoncé de la question
      * @return l'énoncé de la question
      */
     public String getEnonce() {
-<span class="nc" id="L31">        return enonce;</span>
+<span class="fc" id="L31">        return enonce;</span>
     }
 
     /**
@@ -38,10 +38,10 @@ public class QuestionAChoixMultiple implements QuestionAChoix {
      */
     public float getScoreForIndice(int indiceChoix) {
 
-<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (indicesBonnesReponses.contains(indiceChoix)) {</span>
-<span class="nc" id="L42">            return 100f / ((float) (indicesBonnesReponses.size()));</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (indicesBonnesReponses.contains(indiceChoix)) {</span>
+<span class="fc" id="L42">            return 100f / ((float) (indicesBonnesReponses.size()));</span>
         }
-<span class="nc" id="L44">        return 0;</span>
+<span class="fc" id="L44">        return 0;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
