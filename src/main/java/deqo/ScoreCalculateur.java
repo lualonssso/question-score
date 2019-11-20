@@ -15,6 +15,9 @@ public class ScoreCalculateur {
      */
     float calculeScore(List<Integer> indicesReponseEtudiant, QuestionAChoix question) {
         float score = 0;
+        if (indicesReponseEtudiant.size() == 5){
+            return 0;
+        }
         for (int indice:indicesReponseEtudiant) {
             score += question.getScoreForIndice(indice);
         }

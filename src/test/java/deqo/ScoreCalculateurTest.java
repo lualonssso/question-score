@@ -48,4 +48,24 @@ public class ScoreCalculateurTest {
         //THEN
         assertEquals(score, 100f, 0.01f);
     }
+
+    @Test
+    public void calculeScore4() {
+        //GIVEN
+        float score;
+        //WHEN
+        score = scoreC.calculeScore(new ArrayList<>(Arrays.asList(1,2,3,4,5)), questionAChoixMultiple);
+        //THEN
+        assertEquals(score, 0f, 0.01f);
+    }
+
+    @Test
+    public void calculeScore5() {
+        //GIVEN
+        float score;
+        //WHEN
+        score = scoreC.calculeScore(new ArrayList<>(Arrays.asList(1,2,3)), questionAChoixMultiple);
+        //THEN
+        assertEquals(score, 66.66f, 0.01f);
+    }
 }

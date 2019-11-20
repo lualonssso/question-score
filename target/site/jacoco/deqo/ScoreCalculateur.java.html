@@ -15,10 +15,13 @@ import java.util.List;
      */
     float calculeScore(List&lt;Integer&gt; indicesReponseEtudiant, QuestionAChoix question) {
 <span class="fc" id="L17">        float score = 0;</span>
-<span class="fc bfc" id="L18" title="All 2 branches covered.">        for (int indice:indicesReponseEtudiant) {</span>
-<span class="fc" id="L19">            score += question.getScoreForIndice(indice);</span>
-<span class="fc" id="L20">        }</span>
-<span class="fc" id="L21">        return score;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (indicesReponseEtudiant.size() == 5){</span>
+<span class="fc" id="L19">            return 0;</span>
+        }
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        for (int indice:indicesReponseEtudiant) {</span>
+<span class="fc" id="L22">            score += question.getScoreForIndice(indice);</span>
+<span class="fc" id="L23">        }</span>
+<span class="fc" id="L24">        return score;</span>
     }
 
 
