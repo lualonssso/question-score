@@ -32,7 +32,7 @@ public class QuestionAChoixExclusif implements QuestionAChoix {
      * Opération permettant de récupérer le score donné par un choix.
      * @param indiceChoix l'indice du choix
      * @return 100 si l'indice du choix fourni est l'indice de la bonne réponse,
-     * 0 autrement
+     * 0 autrement.
      */
     public float getScoreForIndice(final int indiceChoix) {
         if (indiceChoix == indiceBonneReponse) {

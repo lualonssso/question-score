@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="deqo.QuestionAChoixExclusifTest" time="0.217" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="deqo.QuestionAChoixExclusifTest" time="0.181" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\jbr\bin"/>
-    <property name="sun.java.command" value="C:\Users\lucia\AppData\Local\Temp\surefire13894859538851746774\surefirebooter15650700704351057174.jar C:\Users\lucia\AppData\Local\Temp\surefire13894859538851746774 2019-11-20T17-50-58_666-jvmRun1 surefire14788982252295388670tmp surefire_01682507430513187988tmp"/>
+    <property name="sun.java.command" value="C:\Users\lucia\AppData\Local\Temp\surefire5847476708169051993\surefirebooter4614663676348816998.jar C:\Users\lucia\AppData\Local\Temp\surefire5847476708169051993 2019-11-20T18-15-31_518-jvmRun1 surefire13191198098959970412tmp surefire_012722582336672991213tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\lucia\Documents\M1S1\DecoGeco\question-score\target\test-classes;C:\Users\lucia\Documents\M1S1\DecoGeco\question-score\target\classes;C:\Users\lucia\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lucia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\lucia\AppData\Local\Temp\surefire13894859538851746774\surefirebooter15650700704351057174.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\lucia\AppData\Local\Temp\surefire5847476708169051993\surefirebooter4614663676348816998.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.4+10-b304.77"/>
@@ -61,5 +61,6 @@
     <property name="java.class.version" value="55.0"/>
   </properties>
   <testcase name="getEnonce" classname="deqo.QuestionAChoixExclusifTest" time="0.004"/>
-  <testcase name="getScoreForIndice" classname="deqo.QuestionAChoixExclusifTest" time="0.001"/>
+  <testcase name="getScoreForIndice100" classname="deqo.QuestionAChoixExclusifTest" time="0.003"/>
+  <testcase name="getScoreForIndice0" classname="deqo.QuestionAChoixExclusifTest" time="0.001"/>
 </testsuite>
