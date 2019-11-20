@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QuestionAChoixMultiple.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">login-generator</a> &gt; <a href="index.source.html" class="el_package">deqo</a> &gt; <span class="el_source">QuestionAChoixMultiple.java</span></div><h1>QuestionAChoixMultiple.java</h1><pre class="source lang-java linenums">package deqo;
+
+import java.util.List;
+
+/**
+ * Classe répresentant une question à choix multiple
+ */
+public class QuestionAChoixMultiple implements QuestionAChoix {
+
+    private String enonce;
+    private List&lt;Integer&gt; indicesBonnesReponses;
+
+    /**
+     * Une question à choix multiple est complètement caractérisé par
+     * son énoncé et la liste des indices qui forment
+     * la bonne réponse
+     * @param enonce l'énoncé de la question
+     * @param indicesBonnesReponses la liste des indices formant la
+     * bonne réponse.
+     */
+<span class="nc" id="L21">    public QuestionAChoixMultiple(String enonce, final List&lt;Integer&gt; indicesBonnesReponses) {</span>
+<span class="nc" id="L22">        this.enonce = enonce;</span>
+<span class="nc" id="L23">        this.indicesBonnesReponses = indicesBonnesReponses;</span>
+<span class="nc" id="L24">    }</span>
+
+    /**
+     * Récupère l'énoncé de la question
+     * @return l'énoncé de la question
+     */
+    public String getEnonce() {
+<span class="nc" id="L31">        return enonce;</span>
+    }
+
+    /**
+     * Opération permettant de récupérer le score donné par un choix.
+     * @param indiceChoix l'indice du choix
+     * @return 100/n si indiceChoix appartient à la liste des indices formant la bonne réponse, 0 sinon
+     */
+    public float getScoreForIndice(int indiceChoix) {
+
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (indicesBonnesReponses.contains(indiceChoix)) {</span>
+<span class="nc" id="L42">            return 100f / ((float) (indicesBonnesReponses.size()));</span>
+        }
+<span class="nc" id="L44">        return 0;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

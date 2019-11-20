@@ -40,10 +40,11 @@ login-generator
      <li class="expanded"><a href="project-reports.html" title="Project Reports">Project Reports</a>
       <ul>
        <li class="none"><a href="xref/index.html" title="Source Xref">Source Xref</a></li>
+       <li class="none"><a href="xref-test/index.html" title="Test Source Xref">Test Source Xref</a></li>
        <li class="none"><a href="checkstyle.html" title="Checkstyle">Checkstyle</a></li>
        <li class="none"><a href="findbugs.html" title="FindBugs">FindBugs</a></li>
-       <li class="none"><a href="pmd.html" title="PMD">PMD</a></li>
        <li class="none"><strong>Surefire Report</strong></li>
+       <li class="none"><a href="jacoco/index.html" title="JaCoCo">JaCoCo</a></li>
       </ul></li>
     </ul>
       <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
@@ -73,7 +74,8 @@ function toggleDisplay(elementId) {
 <div class="section">
 <h2><a name="Surefire_Report"></a>Surefire Report</h2></div>
 <div class="section">
-<h2><a name="Summary"></a>Summary</h2><a name="Summary"></a><br />
+<h2><a name="Summary"></a>Summary</h2><a name="Summary"></a>
+<p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
 <table border="1" class="bodyTable">
 <tr class="a">
 <th>Tests</th>
@@ -83,13 +85,69 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0%</td>
-<td>0</td></tr></table><br />
+<td>100%</td>
+<td>0.217</td></tr></table><br />
 <p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div>
+<div class="section">
+<h2><a name="Package_List"></a>Package List</h2><a name="Package_List"></a>
+<p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
+<table border="1" class="bodyTable">
+<tr class="a">
+<th>Package</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th></tr>
+<tr class="b">
+<td><a href="#deqo">deqo</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.217</td></tr></table><br />
+<p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p>
+<div class="section">
+<h3><a name="deqo"></a>deqo</h3><a name="deqo"></a>
+<table border="1" class="bodyTable">
+<tr class="a">
+<th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th></tr>
+<tr class="b">
+<td><a href="#deqoQuestionAChoixExclusifTest"><img src="images/icon_success_sml.gif" alt="" /></a></td>
+<td><a href="#deqoQuestionAChoixExclusifTest">QuestionAChoixExclusifTest</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.217</td></tr></table></div><br /></div>
+<div class="section">
+<h2><a name="Test_Cases"></a>Test Cases</h2><a name="Test_Cases"></a>
+<p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p>
+<div class="section">
+<h3><a name="QuestionAChoixExclusifTest"></a>QuestionAChoixExclusifTest</h3><a name="deqoQuestionAChoixExclusifTest"></a>
+<table border="1" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_success_sml.gif" alt="" /></td>
+<td><a name="TC_deqo.QuestionAChoixExclusifTest.getEnonce"></a>getEnonce</td>
+<td>0.004</td></tr>
+<tr class="b">
+<td><img src="images/icon_success_sml.gif" alt="" /></td>
+<td><a name="TC_deqo.QuestionAChoixExclusifTest.getScoreForIndice"></a>getScoreForIndice</td>
+<td>0.001</td></tr></table></div><br /></div>
       </div>
     </div>
     <div class="clear">

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QuestionAChoixExclusif.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">login-generator</a> &gt; <a href="index.source.html" class="el_package">deqo</a> &gt; <span class="el_source">QuestionAChoixExclusif.java</span></div><h1>QuestionAChoixExclusif.java</h1><pre class="source lang-java linenums">package deqo;
+
+/**
+ * Classe représentant une question à choix exclusive
+ */
+public class QuestionAChoixExclusif implements QuestionAChoix {
+
+    /** Enonce de la question. */
+    private String enonce;
+    /** Indice l seule bonne reponse dans la liste de responses */
+    private int indiceBonneReponse;
+
+    /**
+     * Une question à choix excusive est complètement caractérisé par son énoncé et l'indice de sa bonne réponse
+     * @param enonce l'énoncé de la question
+     * @param indiceBonneReponse l'indice de la bonne réponse
+     */
+<span class="nc" id="L18">    public QuestionAChoixExclusif(String enonce, int indiceBonneReponse) {</span>
+<span class="nc" id="L19">        this.enonce = enonce;</span>
+<span class="nc" id="L20">        this.indiceBonneReponse = indiceBonneReponse;</span>
+<span class="nc" id="L21">    }</span>
+
+    /**
+     * Récupère l'énoncé de la question
+     * @return l'énoncé de la question
+     */
+    public String getEnonce() {
+<span class="nc" id="L28">        return enonce;</span>
+    }
+
+    /**
+     * Opération permettant de récupérer le score donné par un choix.
+     * @param indiceChoix l'indice du choix
+     * @return 100 si l'indice du choix fourni est l'indice de la bonne réponse,
+     * 0 autrement
+     */
+    public float getScoreForIndice(final int indiceChoix) {
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (indiceChoix == indiceBonneReponse) {</span>
+<span class="nc" id="L39">            return 100;</span>
+        }
+<span class="nc" id="L41">        return 0;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
